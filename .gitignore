@@ -1,7 +1,8 @@
-backend/request.rest
-backend/package.json
+
+/backend/node_modules
 backend/package-lock.json
-backend/node_modules/
+backend/package.json
+backend/request.rest
+/frontend/node_modules
 frontend/package.json
 frontend/package-lock.json
-frontend/node_modules/
