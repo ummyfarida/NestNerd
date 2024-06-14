@@ -1,44 +1,30 @@
+import { Container, Row, Col, Nav, Form, Button, Image } from 'react-bootstrap';
+// import { Image } from 'react-bootstrap';
 import NavBar from '../components/NavBar';
-import { Container, Row, Col, Nav, Form, Button } from 'react-bootstrap';
-import { Image } from 'react-bootstrap';
+import Footer from '../components/Footer';
 
 const Profile = () => {
-  return (
-    <>
-      <NavBar />
-      <Container className="mt-3 text-center">
-      <Row className="justify-content-center">
-        <Col md="auto">
-          <h2>Profile</h2>
-          <Image 
-            src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8r6F-gQstI7QqwC2d7hBjTR9vlLf2N5FfS2Fjcq3-8uQ3VWs7" 
-            roundedCircle 
-            alt="Profile Picture" 
-            width={150} 
-            height={150} 
-          />
-          <p>Moon Ga Young</p>
-          <Button variant="warning" >Edit Profile</Button>
-        </Col>
-      </Row>
-      <p></p>
-      <Form>
-        <Row className="mb-3">
-          <Col>
-            <Form.Control 
-              type="" 
-              placeholder="What are u think?" 
-              name="" 
-              className="form-control" 
-            />
-          </Col>
-        </Row>
-        <Button variant="btn btn-primary" >Post</Button>
-      </Form>
-    </Container>
-    </>
-    
-  );
+    return (
+        <>
+            <NavBar />
+            <Container style={{backgroundColor: "#1c2955", padding: "50px"}} fluid>
+                <Row>
+                    <Col xs={12} md={12} className="text-white">
+                        <h1>Profile</h1>
+                        <Image
+                                    src="https://64.media.tumblr.com/24760174ab3922071fd4b0713ec6097c/902dc3d362047da0-64/s1280x1920/35fe3f48862901bb43d3fec11c02664968252f05.jpg"
+                                    // src="holder.js/171x180"
+                                    style={{ width: "100px", height: "100px"}}
+                                    roundedCircle/>
+                                    <br/>
+                                    <h2>goo young jo</h2>
+                                    
+                    </Col>
+                </Row>
+            </Container>
+            <Footer />
+        </>
+    );
 };
 
 export default Profile;
